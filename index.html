@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<style type="text/css">
+*, body, div, ul, li, ol { list-style: none; padding: 0; margin: 0; }
+.container{width:201px; height:201px; margin:0 auto; border:1px #CCC solid;}
+.container .box { width: 200px; height: 200px; margin: 0 auto; background: #999; z-index: 999; position:absolute; overflow: hidden; }
+.container .box ul{width:600px;}
+.container .box ul li { width: 200px; height: 200px; float: left; }
+.container .box ul li img { width: 200px; height: 200px; }
+.container .dots {position: relative; width:200px; height:24px; line-height:24px;  top: -24px;  left:30%; }
+.container .dots li {  width: 8px; height: 8px; float:left; margin-left:10px; text-indent: -999em; border: 2px solid #fff; border-radius: 6px; cursor: pointer; opacity: .4; -webkit-transition: background .5s, opacity .5s; -moz-transition: background .5s, opacity .5s; transition: background .5s, opacity .5s; text-align:center; }
+.dots li.active { opacity: 1; background: #fff; }
+#prev{ width:100px; height:20px;z-index:9999; position:relative; color:#000;}
+#next{width:100px; height:20px;z-index:9999;position:relative;color:#000;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box">
+  <ul style="position:relative;">
+    <li > <img src="images/pic(1).jpg" /></li>
+    <li> <img src="images/pic(2).jpg" /></li>
+    <li > <img src="images/pic(3).jpg" /></li>
+  </ul>
+ 
+</div>
+</div>
+<script type="text/javascript">
+ 	$(".box").slider({
+		show:"slide",
+		delay:2000,
+		fade:800,
+		pagination:true
+	});
+ </script>
+</body>
+</html>
